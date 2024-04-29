@@ -31,15 +31,25 @@
   --tamTitulo: 10px;
 }
 
-body{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.topleft{
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
-header, footer{
-  display: flex;
-  justify-content: space-between;
+.topright{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bottomleft{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.bottomright{
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* Cuadrado */
