@@ -12,8 +12,45 @@
   src: url("") format("woff2"), url("") format("woff");
 }
 
-/* ******************************** */
+*{
+  box-sizing: border-box;
+}
 
-/* Colores */
+:root{
+  /* Colores */
+  --color1: #ff0000;
+  --color2: #00ff00;
+  --color3: #0000ff;
+  --color4: #ffff00;
+  /* Tamaños */
+  --tamCuadrado: 180px;
+  --tamPadding: 10px;
+  /* Tipografia */
+  --fuente: sans-serif;
+  --tamFuente: 5px;
+  --tamTitulo: 10px;
+}
 
-/* ******************************** */
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header, footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Cuadrado */
+.cuadrado{
+  text-align: justify;
+  width: var(--tamCuadrado);
+  height: var(--tamCuadrado);
+  padding: var(--tamPadding);
+  background-color: var(--color1);
+}
+
+figcaption{
+  text-align: center;
+}
